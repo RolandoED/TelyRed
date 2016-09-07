@@ -83,13 +83,70 @@ Terminales Remotas.
 Se la presenta al usuario.
 Navegadores. Presenta algo lógico.
 
+---
 
 
+Proceso de Compsosición de los Datos
+
+###PDU-> Physical Data Unit
+
+Cada capa Posee un PDU específico
+
+L7 - |
+L6 - | - Datos
+L5 - |
+L4 - Segmento
+L3 - Paquete
+L2 - Trama
+L1 - Bit
+
+Modelo OSI Granula los datos, descomponiendolos de arriba a abajo 
+o conformandolos de abajo hasta arriba.
+
+#corregir con presentacion.
+
+L7 - |
+L6 - | 		D
+L5 - |
+L4 - Segmento	D H headeer de capa 4
+L3 - Paquete	D H H IP receptor emitor
+L2 - Trama	D H1 H2 H3 T Agrega un checksum si no es igual se restransmite Mac que envia y recibe
+L1 - Bit	Bits 1001010101010011
 
 
+#Dibuje el modelo de referencia OSI describa cada una de sus capas y liste los PDU para cada capa 
+trama datos bits paquete
 
+#ver imagen de que traer el OSI
 
+###L7	TELNET, FTP , SSH, HTTP/S, SMTP
+L6	JPEG, MOV, TXT
+L5	NFS, SQL
+###L4	TCP UDP
+L3	IP
+L2	PPP
+L1	Ninguno
 
+En H3 los que pueden salir en el examen , el resto tamb
+
+#Examen
+Beneficios:
+
+Facilidad de comprension.
+
+Dividir en partes pequeñas reduce complejidad.
+
+Facilidad en cambios en red ya que modula.
+
+Interoperabilidad.
+
+Facilita diseño modular.
+
+---
+
+Interaccion entre las capas:
+
+Uso de Headers entre capas.
 
 
 
